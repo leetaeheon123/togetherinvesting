@@ -1,0 +1,13 @@
+{
+    "development" : {
+        "username": "root",
+        "password": "xogjs0504",
+        "database": "example",
+        "host": "localhost",
+        "port": "3306",
+        "dialect": "mysql",
+        "timezone" : "+09:00"
+    },
+
+    "salt" : "a3a"
+}
