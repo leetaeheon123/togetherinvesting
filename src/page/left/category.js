@@ -104,7 +104,7 @@ class category extends Component {
               <Link className={pre_cat === '' ? "pre_cat" : null} to='/' onClick={() => _changeCatgory('')}> 
                 전체 보기
               </Link> 
-              {login && admin === 'Y' && user_ip === "192.168.0.3"  
+              {login && admin === 'Y' && user_ip === "192.168.0.196"  
                                ? !edit ? <input type='button' value='Edit' className='Edit' onClick={() => this.setState({ edit : !edit })}/>
                                : <input type='button' value='Add' className='Edit' onClick={() => this._addCategory()}/> 
                                  

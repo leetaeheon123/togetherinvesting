@@ -187,10 +187,16 @@ module.exports = {
                 Board.update({ cat_id : 0 }, {
                     where : { cat_id : body.id }
                 })
-                .then( () => { callback(true) })
+                .then( () => {
+                    Board.destory({ 
+                        where : { cat_id: 0 }  
+                    })
+                    .then( () => { callback(true) })
                 .catch(err => { throw err; })
             })
-        },
+        })
+      }
+    },
 
         board : (body, callback) => {
             Board.destroy({

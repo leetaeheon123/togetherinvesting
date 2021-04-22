@@ -45,7 +45,7 @@ class header extends Component {
         <div className='header_grid'>
             <div className='acenter'> 
             
-              {login && admin === 'Y' && user_ip === "192.168.0.3"
+              {login && admin === 'Y' && user_ip === "192.168.0.196"
                 ? <h5> <Link to='/write'> 포스트 작성 </Link> </h5>
                 : null
               }
